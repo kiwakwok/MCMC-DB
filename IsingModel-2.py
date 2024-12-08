@@ -7,17 +7,6 @@ def initialize_lattice(size):
 
 def calculate_energy(lattice):
     """Calculate the total energy of the lattice."""
-    # energy = 0
-    # size = lattice.shape[0]
-    # for i in range(size):
-    #     for j in range(size):
-    #         spin = lattice[i, j]
-    #         # Neighbors (periodic boundary conditions)
-    #         neighbors = lattice[(i + 1) % size, j] + lattice[i, (j + 1) % size]
-    #         energy -= spin * neighbors
-    #         print((i,j), ((i + 1) % size, j), (i, (j + 1) % size))
-    #         print('')
-    # return energy / 2  # Each pair counted twice
     energy = 0
     size = lattice.shape[0]
     for i in range(size):
